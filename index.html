@@ -1,14 +1,114 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="UTF-8">
+    <title>This is awkward</title>
 
-<head>
-        <link rel = "stylesheet" type = "text/css" href = "/styles/style.css" />
-</head>
-<body>
+  <style type="text/css">
+  body {
+    font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  }
+  .top-red {
+      height: 2px;
+      background-color: #9E0000; 
+      margin-bottom: 20px;
+      display: block;
+      width: 100%;
+  }
+  .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+  }
+  h1 {
+      font-size: 28px; 
+      font-weight: bold; 
+      color: #9E0000; 
+      text-align: center;
+      }
 
-<h1>My First Heading</h1>
+  p {
+      font-size: 16px; 
+      line-height: 20px; 
+      text-align: center;
+      text-decoration: none;
+      }
 
-<p>My first paragraph.</p>
+  a {
+      text-decoration: none; 
+      color: #2c2c2c;
+      }
 
-</body>
+ a:hover {
+  color: #008BAA;
+    }
+
+  hr {
+      height: 1px;
+      color: #f4f4f4;
+  }
+
+
+    /* Create four equal columns that floats next to each other */
+    .column {
+    float: left;
+    width: 25%;
+    height: 300px; /* Should be removed. Only for demonstration */
+    }
+
+    /* Clear floats after the columns */
+    .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+  </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet"> 
+
+  </head>
+  <body style="margin: 0;">
+    <div class="top-red"> </div>
+    <div><img class="center" style="width: 250px;" src="images/allied_logo.svg" alt="allied logo"></div>
+    
+    <div class="center" style="width: 500px; margin-top: 200px;">
+        <h1>This is awkward...</h1>
+        <p>
+            Unfortunately we are no longer support your browser version. 
+            Please update your browser in order to browse our website.
+        </p>
+
+        <p style="margin-bottom: 50px;">
+            Click any browsers below to download it's newest version.
+        </p>
+
+        <div class="row">
+            <div class="column">
+                <a href="https://www.google.com/chrome/" target="_blank">
+                    <img class="center" style="height: 50px;" src="images/chrome-logo.svg" alt="Google Chrome logo">
+                    <p>Chrome</p>
+                </a>
+            </div>
+            <div class="column">
+                    <a href="https://www.microsoft.com/en-us/windows/microsoft-edge" target="_blank">
+                        <img class="center" style="height: 50px;" src="images/edge-logo.svg" alt="Microsoft Edge logo">
+                        <p>Edge</p>
+                    </a>
+            </div>
+            <div class="column">
+                    <a href="https://www.mozilla.org/en-US/firefox/" target="_blank">
+                        <img class="center" style="height: 50px;" src="images/firefox-logo.svg" alt="Mozilla Firefox logo">
+                        <p>Firefox</p>
+                    </a>
+            </div>
+            <div class="column">
+                    <a href="https://support.apple.com/en_GB/downloads/safari" target="_blank">
+                        <img class="center" style="Height: 50px;" src="images/safari-logo.svg" alt="Apple Safari logo">
+                        <p>Safari</p>
+                    </a>
+            </div>
+        </div>
+
+    </div>
+  </body>
 </html>
